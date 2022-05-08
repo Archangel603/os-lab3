@@ -23,7 +23,7 @@ int main(int argc, char* args[]) {
     DWORD simulationTime = 10000; // 10s
     vector<int> lifespans = {3000, 3000, 3000, 3000, 3000}; // 3s
     vector<int> thinkTimes = {1000, 1000, 1000, 1000, 1000}; // 1s
-    vector<int> eatTimes = {500, 500, 500, 500, 500}; // 0.5s
+    vector<int> eatTimes = {1000, 1000, 1000, 1000, 1000}; // 1s
 
     if (argc > 1) {
         simulationTime = atol(args[1]);

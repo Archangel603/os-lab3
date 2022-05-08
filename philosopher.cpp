@@ -11,7 +11,7 @@ void Philosopher::live() {
     while (!this->_dead) {
         this->think();
 
-        if (this->checkDead();)
+        if (this->checkDead())
             return;
 
         this->eat();
@@ -35,7 +35,7 @@ bool Philosopher::eat() {
 
     printf("The philosopher %d returned forks to the waiter\n", GetCurrentThreadId());
 
-    this->_lifeTimeRemaining += this->_thinkTime;
+    this->_lifeTimeRemaining += this->_eatTime;
 
     printf("The philosopher %d has %d life time left\n", GetCurrentThreadId(), this->_lifeTimeRemaining);
 
